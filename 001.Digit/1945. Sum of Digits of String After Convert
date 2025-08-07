@@ -1,0 +1,17 @@
+class Solution(object):
+    def getLucky(self, s, k):
+        t=""
+        for c in s:
+            pos = ord(c) - ord('a') + 1
+            t=t+str(pos)
+        n=int(t)
+        while(k>0):
+            sum=0
+            while(n>0):
+                sum+=(n%10)
+                n=n//10
+            n=sum
+            k-=1
+        return n
+
+        
