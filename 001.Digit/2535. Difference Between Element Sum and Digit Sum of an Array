@@ -1,0 +1,12 @@
+class Solution(object):
+    def differenceOfSum(self, nums):
+        t1=0
+        t2=0
+        for i in nums:
+            t1+=i
+            while i>0:
+                t2+=i%10
+                i//=10
+        return t1-t2
+        
+        
