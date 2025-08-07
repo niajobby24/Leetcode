@@ -1,0 +1,8 @@
+class Solution(object):
+    def maxProduct(self, n):
+        digits=[int(d) for d in str(n)]
+        f=max(digits)
+        digits.remove(f)
+        s=max(digits)
+        return f*s
+        
