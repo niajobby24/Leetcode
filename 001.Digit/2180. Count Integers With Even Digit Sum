@@ -1,0 +1,16 @@
+class Solution(object):
+    def countEven(self, num):
+        c=0
+        j=1
+        while(j<=num):
+            sum=0
+            i=j
+            while(i>0):
+                sum+=i%10
+                i=i//10
+            if sum%2==0:
+                c+=1
+            j+=1
+        return c
+
+        
